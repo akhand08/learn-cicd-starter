@@ -19,8 +19,6 @@ jobs:
           go-version: "1.25.1"
       
 
-      - name: Version Printing
-        run: |
-            echo "Current Go versio is: "
-            go version
+      - name: Testing
+        run: go test ./...
        
